@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Personal Library</h1>
+    <div class="new-book">
+      <button class="new-book-button">Add New Book</button>
+    </div>
+
+    <div id="popup">
+      <form id="form" action="/script.js">
+        <span class="close">&times;</span>
+        <h3>New Book</h3>
+        <div id="newBookData">
+          <p>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+              required
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author"
+              required
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              id="pages"
+              name="pages"
+              placeholder="Pages"
+              required
+            />
+          </p>
+        </div>
+        <div class="checkBox">
+          <label>Read:</label>
+          <input type="checkbox" id="read" name="read" value="yes" required />
+        </div>
+        <button type="submit" form="form" id="addBook">Add</button>
+      </form>
+    </div>
+    <div id="library-container"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- 
+    1 Add toggler slides
+    2 Add favicon
+
+ -->
