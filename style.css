@@ -155,11 +155,12 @@ h3 {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  color: white;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }
