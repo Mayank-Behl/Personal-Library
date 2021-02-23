@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-body {
-  background-color: #7ee8fa;
-  background-image: linear-gradient(5deg, #7ee8fa 0%, #80ff72 90%);
+html{
   min-height: 100vh;
+}
+body {
+  /*   background-color: #7ee8fa;
+  background-image: linear-gradient(5deg, #7ee8fa 0%, #80ff72 90%); */
+  background-color: #a38560;
+  background-image: linear-gradient(5deg, #a38560 0%, #e0d4ae 90%);
+
 }
 
 h1 {
@@ -29,16 +34,20 @@ h1 {
   /*   border: none; */
   border-radius: 10px;
   color: black;
-  background-color: rgb(230, 255, 198);
+  background-color: #a38560;
   font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
-  border: 1px solid wheat;
+  border: 2px solid white;
   cursor: pointer;
+  color: white;
 }
 
 .new-book-button:hover {
   transition: all 0.5s ease-in-out;
   transform: scale(1.2);
+  color: #a38560 ;
+  background-color: white;
+  border: 5px solid rgb(221, 181, 143);
 }
 
 #library-container {
@@ -85,11 +94,10 @@ h1 {
 
 /*[------------MODAL CONTENT----------------]*/
 #form {
-  /* background-color: #fefefe; */
-  background-color: rgb(234, 253, 209);
+  background-color: #c3a886;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 7px solid rgb(233, 230, 230);
   width: 30%;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -100,9 +108,10 @@ h1 {
 .checkBox {
   text-align: left;
   font-size: 22px;
+  margin: 10px;
 }
 #read {
-  transform: scale(1.4);
+  transform: scale(1.5);
 }
 #addBook {
   min-width: 200px;
@@ -110,15 +119,15 @@ h1 {
   max-width: 300px;
   max-height: 50px;
   box-shadow: none;
-  /* border: none; */
   border-radius: 10px;
-  color: black;
-  background-color: rgb(208, 251, 152);
+  color: #a38560;;
+  background-color: white;;
   font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
   border: 1px solid rgb(251, 220, 162);
   cursor: pointer;
   margin: 10px 0px;
+  letter-spacing: 0.2em;
 }
 #addBook:hover {
   transition: all 0.5s ease-in-out;
@@ -157,17 +166,21 @@ h3 {
 
 /*[------------LIBRARY CONTAINER & BOOK CARD----------------]*/
 .book {
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 5px solid black;
+  border: 5px solid wheat;
   border-radius: 25px;
   height: 300px;
   width: 250px;
   padding: 15px;
   margin: 20px;
-  background-color: #fbd082;
+  background-color: rgb(200, 148, 79);
+  color: rgb(238, 237, 237);
+  
 }
+
 .title {
   font-size: 30px;
   font-weight: bold;
@@ -195,6 +208,7 @@ button:focus {
   margin-bottom: 20px;
   border-radius: 10px;
   border: solid 3px black;
+  cursor: pointer;
 }
 
 #removeBtn {
@@ -204,4 +218,5 @@ button:focus {
   border-radius: 10px;
   border: solid 3px black;
   background-color: #d7d9da;
+  cursor: pointer;
 }
